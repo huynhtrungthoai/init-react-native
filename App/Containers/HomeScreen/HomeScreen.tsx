@@ -1,24 +1,24 @@
-import React, {useState, useEffect} from 'react';
-import {
-  View,
-  Text,
-  RefreshControl,
-  TouchableOpacity,
-  FlatList,
-} from 'react-native';
-import isEmpty from 'lodash/isEmpty';
+/**
+ * @author [huynhtrungthoai]
+ * @email [huynhtrungthoai@gmail.com]
+ * @create date 2021-10-03 00:43:01
+ * @modify date 2021-10-03 00:43:01
+ * @desc [description]
+ */
+import React from 'react';
+import {View, Text} from 'react-native';
 
 // Styles
 import styles from './Styles/HomeScreenStyle';
+import {BBaseView, BText} from '../../Components';
 
-// Redux
-import {useDispatch, useSelector} from 'react-redux';
+// import {Colors} from '../../Themes';
 
 function HomeScreen({navigation}) {
   return (
-    <View>
-      <Text text={'Hello word'} style={{fontSize: 30}} />
-    </View>
+    <BBaseView>
+      <BText text="Welcome Home!!!!!!!!" />
+    </BBaseView>
   );
 }
 

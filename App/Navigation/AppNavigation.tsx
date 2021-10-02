@@ -16,9 +16,23 @@ function AppNavigation() {
     <NavigationContainer ref={navigationRef} onStateChange={screenTracking}>
       <Stack.Navigator initialRouteName={'SplashScreen'} headerMode={'none'}>
         <Stack.Screen name={'SplashScreen'} component={SplashScreen} />
-        <Stack.Screen name={'HomeScreen'} component={HomeScreen} />
+        <Stack.Screen name={'HomeScreen'} component={HomeStacks} />
       </Stack.Navigator>
     </NavigationContainer>
+  );
+}
+
+const HomeStack = createStackNavigator();
+function HomeStacks() {
+  return (
+    <HomeStack.Navigator
+      screenOptions={{
+        headerShown: false,
+        gestureEnabled: false,
+      }}
+      initialRouteName="HomeScreen">
+      <Stack.Screen name={'HomeScreen'} component={HomeScreen} />
+    </HomeStack.Navigator>
   );
 }
 
