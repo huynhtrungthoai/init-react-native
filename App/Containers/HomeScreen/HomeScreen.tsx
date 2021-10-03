@@ -6,18 +6,20 @@
  * @desc [description]
  */
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View} from 'react-native';
 
 // Styles
 import styles from './Styles/HomeScreenStyle';
+
+// Components
 import {BBaseView, BText} from '../../Components';
 
-// import {Colors} from '../../Themes';
-
-function HomeScreen({navigation}) {
+function HomeScreen() {
   return (
     <BBaseView>
-      <BText text="Welcome Home!!!!!!!!" />
+      <View style={styles.containerStyle}>
+        <BText text="Welcome Home!!!!!!!!" size={16} isBold />
+      </View>
     </BBaseView>
   );
 }

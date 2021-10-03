@@ -5,10 +5,8 @@
  * @modify date 2021-09-01 18:59:28
  * @desc [description]
  */
-import {StyleSheet} from 'react-native';
 
-// Themes
-// import {Colors} from '../../../Themes';
+import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
   containerRoot: {

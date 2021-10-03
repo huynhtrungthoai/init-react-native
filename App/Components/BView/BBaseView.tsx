@@ -5,6 +5,7 @@
  * @modify date 2021-09-01 18:59:53
  * @desc [description]
  */
+
 import React from 'react';
 import {
   Platform,
@@ -27,7 +28,7 @@ const BBaseView: React.FC<Props> = props => {
       style={styles.containerRoot}
       behavior="padding"
       enabled
-      keyboardVerticalOffset={Platform.OS === 'android' && -500}>
+      keyboardVerticalOffset={Platform.OS === 'android' ? -500 : 0}>
       <SafeAreaView style={[styles.containerRoot, props.containerRoot]}>
         {props.children}
       </SafeAreaView>

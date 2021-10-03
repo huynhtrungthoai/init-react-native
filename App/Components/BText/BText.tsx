@@ -15,7 +15,7 @@ export interface Props {
   text: String | undefined | null;
   color?: string;
   size?: number;
-  align?: string;
+  align?: any;
   isBold?: boolean;
   numberOfLines?: number;
   lineHeight?: number;

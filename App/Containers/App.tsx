@@ -1,3 +1,11 @@
+/**
+ * @author [huynhtrungthoai]
+ * @email [huynhtrungthoai@gmail.com]
+ * @create date 2021-10-04 00:58:01
+ * @modify date 2021-10-04 00:58:01
+ * @desc [description]
+ */
+
 import React from 'react';
 import {View, StyleSheet, StatusBar, SafeAreaView} from 'react-native';
 
@@ -10,7 +18,7 @@ import store from '../Redux/CreateStore';
 
 const STATUSBAR_HEIGHT = StatusBar.currentHeight;
 const App: () => any = () => {
-  const MyStatusBar = ({backgroundColor, ...props}) => (
+  const MyStatusBar = ({backgroundColor, ...props}: any) => (
     <View style={[styles.statusBar, {backgroundColor}]}>
       <SafeAreaView>
         <StatusBar translucent backgroundColor={backgroundColor} {...props} />

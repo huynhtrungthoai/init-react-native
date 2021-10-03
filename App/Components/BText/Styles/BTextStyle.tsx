@@ -5,8 +5,8 @@
  * @modify date 2021-10-03 00:29:48
  * @desc [description]
  * */
+
 import {StyleSheet} from 'react-native';
-// import {Colors} from '../../../Themes';
 
 export default StyleSheet.create({
   defaultText: {

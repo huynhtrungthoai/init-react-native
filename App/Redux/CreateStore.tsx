@@ -8,16 +8,16 @@ import logger from 'redux-logger';
 const composeEnhancers = compose;
 // window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ||
 
-// create the saga middleware
+// Create the saga middleware
 const sagaMiddleware = createSagaMiddleware();
-const middlewares = [sagaMiddleware, logger];
+const middleWares = [sagaMiddleware, logger];
 
-// mount it on the Store
+// Mount it on the Store
 const store = createStore(
   reducer,
-  composeEnhancers(applyMiddleware(...middlewares)),
+  composeEnhancers(applyMiddleware(...middleWares)),
 );
 
-// then run the saga
+// Then run the saga
 sagaMiddleware.run(mySaga);
 export default store;

@@ -1,6 +1,6 @@
 import {navigationRef} from './AppNavigator';
 
-export function getActiveRouteName(state: any) {
+export function getActiveRouteName(state: any): void {
   if (state) {
     const route = state.routes[state.index];
     if (route.state) {

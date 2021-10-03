@@ -8,7 +8,7 @@ import {navigationRef} from '../Navigation/AppNavigator';
 
 // Screens
 import SplashScreen from '../Containers/SplashScreen';
-import {HomeScreen} from '../Containers/HomeScreen';
+import {HomeScreen} from '../Containers';
 
 const Stack = createStackNavigator();
 function AppNavigation() {
