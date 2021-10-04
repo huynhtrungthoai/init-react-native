@@ -13,4 +13,5 @@ export default {
     'Cache-Control': 'no-cache',
   },
   timeOut: 12000,
+  imagePath: '',
 };

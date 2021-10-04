@@ -18,7 +18,7 @@ function SplashScreen({navigation}: any) {
       });
       clearTimeout(timeOut);
     }, 700);
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <SafeAreaView style={styles.mainContainer}>

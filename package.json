@@ -7,7 +7,11 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "debug-android": "react-native run-android",
+    "clean-android": "cd android && ./gradlew cleanBuildCache && cd ..",
+    "build-apk": "cd android && ./gradlew assembleRelease && cd ..",
+    "build-aab": "cd android && ./gradlew bundleRelease && cd .."
   },
   "dependencies": {
     "@react-navigation/native": "^5.9.4",
@@ -16,6 +20,8 @@
     "moment": "^2.29.1",
     "react": "17.0.1",
     "react-native": "0.64.2",
+    "react-native-easy-toast": "^2.0.0",
+    "react-native-fast-image": "^8.5.11",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-modal": "^13.0.0",
     "react-native-safe-area-context": "^3.2.0",
